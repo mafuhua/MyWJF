@@ -10,7 +10,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.wjf.mywjf.advertis.AdvertisFragment;
+import com.wjf.mywjf.apply.ApplayFragment;
+import com.wjf.mywjf.base.FragmentFractory;
 import com.wjf.mywjf.databinding.ActivityMainBinding;
+import com.wjf.mywjf.home.MainFragment;
+import com.wjf.mywjf.integral.IntegralFragment;
+import com.wjf.mywjf.mine.ShopFragment;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding viewDataBinding;
@@ -55,7 +61,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click(View view) {
-        if (view.getId() == R.id.rb_main_group) {
+        switch (view.getId()){
+
+        }
+     /*   if (view.getId() == R.id.rb_main_group) {
             if (currentFragment != mainFragment) {
                 currentcheck = R.id.rb_main_group;
                 switchContent(currentFragment, mainFragment, currentcheck);
@@ -72,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (view.getId() == R.id.rb_main_shopping) {
             currentcheck = R.id.rb_main_group;
             switchContent(currentFragment, shopFragment, currentcheck);
-        }
+        }*/
     }
 
     public void switchContent(Fragment from, Fragment to, int currentcheck) {

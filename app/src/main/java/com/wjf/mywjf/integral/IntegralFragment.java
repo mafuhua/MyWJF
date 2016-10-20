@@ -1,4 +1,4 @@
-package com.wjf.mywjf;
+package com.wjf.mywjf.integral;
 
 /**
  * Created by Administrator on 2016/10/19.

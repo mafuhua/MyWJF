@@ -7,7 +7,7 @@
         <import type="android.view.View" />
 
         <variable
-            name="act"
+            name="activity"
             type="com.wjf.mywjf.MainActivity" />
 
     </data>
@@ -16,7 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
 
         <FrameLayout
             android:id="@+id/fl_home_content"
@@ -40,7 +39,7 @@
                 android:button="@null"
                 android:drawableTop="@drawable/main_selector"
                 android:gravity="center"
-                android:onClick="@{act.click}"
+                android:onClick="@{activity.click}"
                 android:text="首页"
                 android:textColor="@drawable/selector_home_nav_text_color"
                 android:textSize="10sp" />
@@ -54,7 +53,7 @@
                 android:drawableTop="@drawable/advertis_selector"
                 android:gravity="center"
                 android:text="广告"
-                android:onClick="@{act.click}"
+                android:onClick="@{activity.click}"
                 android:textColor="@drawable/selector_home_nav_text_color"
                 android:textSize="10sp" />
 
@@ -68,7 +67,7 @@
                 android:drawableTop="@drawable/apply_selector"
                 android:gravity="center"
                 android:text="应用"
-                android:onClick="@{act.click}"
+                android:onClick="@{activity.click}"
                 android:textColor="@drawable/selector_home_nav_text_color"
                 android:textSize="10sp" />
 
@@ -81,7 +80,7 @@
                 android:drawableTop="@drawable/integra_selector"
                 android:gravity="center"
                 android:text="积分"
-                android:onClick="@{act.click}"
+                android:onClick="@{activity.click}"
                 android:textColor="@drawable/selector_home_nav_text_color"
                 android:textSize="10sp" />
 
@@ -92,7 +91,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:button="@null"
-                android:onClick="@{act.click}"
+                android:onClick="@{activity.click}"
                 android:drawableTop="@drawable/shop_selector"
                 android:gravity="center"
                 android:text="我的"

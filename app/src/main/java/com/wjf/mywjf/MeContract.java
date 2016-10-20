@@ -2,6 +2,9 @@ package com.wjf.mywjf;
 
 import android.content.Context;
 
+import com.wjf.mywjf.base.BasePresenter;
+import com.wjf.mywjf.base.BaseView;
+
 public interface MeContract {
 
     interface View extends BaseView {

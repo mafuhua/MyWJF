@@ -1,6 +1,8 @@
-package com.wjf.mywjf;
+package com.wjf.mywjf.apply;
 
 import android.view.View;
+
+import com.wjf.mywjf.base.BaseFragment;
 
 /**
  * Created by Administrator on 2016/10/19.

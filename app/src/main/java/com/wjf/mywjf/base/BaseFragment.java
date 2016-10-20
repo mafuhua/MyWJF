@@ -1,4 +1,4 @@
-package com.wjf.mywjf;
+package com.wjf.mywjf.base;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

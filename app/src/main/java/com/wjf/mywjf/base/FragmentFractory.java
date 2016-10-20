@@ -1,6 +1,12 @@
-package com.wjf.mywjf;
+package com.wjf.mywjf.base;
 
 import android.support.v4.app.Fragment;
+
+import com.wjf.mywjf.advertis.AdvertisFragment;
+import com.wjf.mywjf.apply.ApplayFragment;
+import com.wjf.mywjf.home.MainFragment;
+import com.wjf.mywjf.integral.IntegralFragment;
+import com.wjf.mywjf.mine.ShopFragment;
 
 import java.util.HashMap;
 
@@ -39,8 +45,6 @@ public class FragmentFractory {
             }
             cacheFragment.put(position, fragment);
         }
-
-
         return fragment;
     }
 }

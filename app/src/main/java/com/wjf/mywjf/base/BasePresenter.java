@@ -1,4 +1,4 @@
-package com.wjf.mywjf;
+package com.wjf.mywjf.base;
 
 public interface BasePresenter {
 }
