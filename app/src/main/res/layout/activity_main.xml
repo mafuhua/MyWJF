@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wjf.mywjf.MainActivity">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="act"
+            type="com.wjf.mywjf.MainActivity" />
+
+    </data>
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_main_group"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_selector"
+                android:gravity="center"
+                android:onClick="@{act.click}"
+                android:text="首页"
+                android:textColor="@drawable/selector_home_nav_text_color"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rb_mian_advertising"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/advertis_selector"
+                android:gravity="center"
+                android:text="广告"
+                android:onClick="@{act.click}"
+                android:textColor="@drawable/selector_home_nav_text_color"
+                android:textSize="10sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_mian_apply"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/apply_selector"
+                android:gravity="center"
+                android:text="应用"
+                android:onClick="@{act.click}"
+                android:textColor="@drawable/selector_home_nav_text_color"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rb_main_integrate"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/integra_selector"
+                android:gravity="center"
+                android:text="积分"
+                android:onClick="@{act.click}"
+                android:textColor="@drawable/selector_home_nav_text_color"
+                android:textSize="10sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_main_shopping"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:onClick="@{act.click}"
+                android:drawableTop="@drawable/shop_selector"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/selector_home_nav_text_color"
+                android:textSize="10sp" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+</layout>

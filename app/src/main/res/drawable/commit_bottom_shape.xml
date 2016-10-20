@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#6699FF" />
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+
+    <!-- <item
+         android:drawable="@drawable/shape_pay_button_pressed_circle"
+         android:state_pressed="true" />
+     <item
+         android:drawable="@drawable/shape_pay_button_red_circle"
+         android:state_pressed="false" />-->
+
+</shape>

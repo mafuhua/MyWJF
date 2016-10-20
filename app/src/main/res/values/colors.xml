@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <!-- 所有页面头部的背景颜色 -->
+    <color name="all_background_title">#f14e6d</color>
+
+    <!--主页的背景颜色-->
+    <color name="main_background_colot">#EEF6F9</color>
+
+    <!--主页item的背景颜色-->
+    <color name="main_fragemnt_item_backgrond">#3F4868</color>
+
+    <!-- 模块导航背景色 -->
+    <color name="color_add_bank_card_text">#656565</color>
+
+    <!-- 模块导航背景色 -->
+    <color name="color_module_navigation">#404767</color>
+    <!-- 应用页面灰色文字 -->
+    <color name="color_application_text_dark">#989898</color>
+    <!-- 应用页面头部面色背景 -->
+    <color name="color_application_layout_dark">#E3E3E3</color>
+    <!-- 应用界面头部导航文字颜色 -->
+    <color name="color_applocation_navigation_text">#e6e6e6</color>
+
+    <!-- 应用dialog窗口其他金额字颜色 -->
+    <color name="color_application_pay_other_amount">#6699ff</color>
+
+    <color name="color_itegral_diviler">#F9F9F9</color>
+    <!-- 转入银行卡按钮 -->
+    <color name="color_itegral_transfor_to_bank">#6799FD</color>
+    <!-- 手势密码背景色 -->
+    <color name="color_login_bg">#242736</color>
+    <!--所有的颜色值-->
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!--黑色值-->
+    <color name="black">#ff000000</color>
+    <!-- 文字基本颜色  -->
+    <color name="color_base_text">#272727</color>
+    <!-- 文字基本颜色  -->
+    <color name="color_nav_text">#767883</color>
+    <!-- 深灰色  -->
+    <color name="color_deep_dark_gray">#666666</color>
+    <!-- 半透明 -->
+    <color name="color_deep_trans">#88000000</color>
+    <!-- 播放导航  -->
+    <color name="color_play_nav_text">#404868</color>
+
+    <!--视频播放页面字体的颜色值-->
+    <color name="video_view_play_textsize">#fe9900</color>
+
+    <!--视频播放页面点赞分享下载收藏的色值-->
+    <color name="video_view_play_share">#bab9bd</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/progress" />
+    <!-- 第二进度图 -->
+    <item android:drawable="@mipmap/progress_selseted" />
+    <!-- 进度度 -->
+    <item android:drawable="@mipmap/progress" />
+</layer-list>
