@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-
     <data>
         <variable
             name="mainfrag"
             type="com.wjf.mywjf.home.MainFragment" />
     </data>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="afd" />
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_head_indicator"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
-        </android.support.v7.widget.RecyclerView>
         <android.support.v4.view.ViewPager
-            android:id="@+id/vp_home"
+            android:id="@+id/vp_banna"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="@dimen/dp_180">
 
+        </android.support.v4.view.ViewPager>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_advertisements"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+        </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 </layout>
