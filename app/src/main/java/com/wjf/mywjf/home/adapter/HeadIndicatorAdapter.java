@@ -7,18 +7,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.wjf.mywjf.R;
-import com.wjf.mywjf.home.entity.AppMenus;
-import com.wjf.mywjf.home.entity.HeadNav;
+import com.wjf.mywjf.home.entity.HeadNavMenu;
 
 /**
  * Created by Administrator on 2016/10/20.
  */
 
 public class HeadIndicatorAdapter extends RecyclerView.Adapter<HeadIndicatorAdapter.HeadIndicatorHolder> {
-    private AppMenus appMenus;
+    private HeadNavMenu.DataBean appMenus;
     private int mrcPosition;
 
-    public HeadIndicatorAdapter(AppMenus appMenus) {
+    public HeadIndicatorAdapter(HeadNavMenu.DataBean appMenus) {
         this.appMenus = appMenus;
     }
 
@@ -33,17 +32,15 @@ public class HeadIndicatorAdapter extends RecyclerView.Adapter<HeadIndicatorAdap
     @Override
     public void onBindViewHolder(HeadIndicatorHolder holder, int position) {
         mrcPosition = position;
-        HeadNav headNav = appMenus.appMenus.get(position);
-        holder.text.setText(headNav.getName());
+        holder.text.setText(appMenus.getAppMenus().get(position).getName());
 
     }
 
     @Override
     public int getItemCount() {
-        return appMenus==null?0:appMenus.appMenus.size();
+        return appMenus.getAppMenus()==null?0:appMenus.getAppMenus().size();
     }
     public class HeadIndicatorHolder extends RecyclerView.ViewHolder{
-
         private final TextView text;
 
         public HeadIndicatorHolder(View itemView) {

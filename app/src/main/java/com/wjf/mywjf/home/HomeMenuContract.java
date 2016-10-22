@@ -2,22 +2,22 @@ package com.wjf.mywjf.home;
 
 import com.wjf.mywjf.base.BasePresenter;
 import com.wjf.mywjf.base.BaseView;
-import com.wjf.mywjf.home.entity.HomeDataModule;
+import com.wjf.mywjf.home.entity.HeadNavMenu;
 
 /**
  * Created by Administrator on 2016/10/20.
  */
-public class HomeContract {
+public class HomeMenuContract {
     interface View extends BaseView {
 
-        void onGetDataSuccess(HomeDataModule result);
+        void onGetTiltesSuccess(HeadNavMenu result);
 
-        void onGetDataFailure();
+        void onGetTiltesFailure();
 
     }
 
     interface Presenter extends BasePresenter {
 
-        void getDatas();
+        void getTiltes();
     }
 }

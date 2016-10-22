@@ -8,8 +8,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Toast;
 
+import com.squareup.okhttp.Call;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 import com.wjf.mywjf.advertis.AdvertisFragment;
 import com.wjf.mywjf.apply.ApplayFragment;
 import com.wjf.mywjf.base.FragmentFractory;
@@ -17,6 +23,9 @@ import com.wjf.mywjf.databinding.ActivityMainBinding;
 import com.wjf.mywjf.home.MainFragment;
 import com.wjf.mywjf.integral.IntegralFragment;
 import com.wjf.mywjf.mine.ShopFragment;
+
+import java.io.IOException;
+
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding viewDataBinding;
@@ -58,6 +67,76 @@ public class MainActivity extends AppCompatActivity {
                 .show(mainFragment)
                 .commit();
         currentFragment = mainFragment;
+
+        String url = Constant.SERVICE_URL + "/visit/getMeun.do?terminalType=MOBIE&os=ANDROID";
+        //创建okHttpClient对象
+        OkHttpClient mOkHttpClient = new OkHttpClient();
+        //创建一个Request
+        final Request request = new Request.Builder()
+                .url(url)
+                .build();
+        //new call
+        Call call = mOkHttpClient.newCall(request);
+        //请求加入调度
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                String s1 = response.toString();
+                String s2 = String.valueOf(response.body());
+                String s = response.body().toString();
+                Log.d("MainActivity", s);
+                Log.d("MainActivity", s1);
+                Log.d("MainActivity", s2);
+            }
+
+        });
+       /* XUtil.Get(url,null,new MyCallBack<String>(){
+
+        });
+        RequestParams requestParams = new RequestParams(url);
+        x.http().get(requestParams, new org.xutils.common.Callback.CommonCallback<String>() {
+            @Override
+            public void onSuccess(String result) {
+                Log.d("HomeMenuPresenter", result);
+                //view.onGetTiltesSuccess(result);
+                Toast.makeText(WjfApplication.context, result, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                Log.d("MainActivity", "isOnCallback:" + isOnCallback);
+            }
+
+            @Override
+            public void onCancelled(org.xutils.common.Callback.CancelledException cex) {
+                Log.d("MainActivity", "cex:" + cex);
+            }
+
+            @Override
+            public void onFinished() {
+                Log.d("MainActivity", "onFinished:");
+            }
+        });
+*/
+       /* Ion.with(this)
+                .load(url)
+                .asJsonObject().setCallback(new FutureCallback<JsonObject>() {
+            @Override
+            public void onCompleted(Exception e, JsonObject result) {
+                String code = result.get("status").getAsString();
+                Gson gson = new Gson();
+                Type type = new TypeToken<AppMenus>() {
+                }.getType();
+                AppMenus data = gson.fromJson(result.get("data"), type);
+                List<HeadNav> appMenus = data.appMenus;
+            }
+        });*/
+
     }
 
     public void switchFragment(int id) {
